@@ -230,7 +230,10 @@ img{
 .pt-98{
     padding-top: 98px!important;
 }
-
+.slider-image{
+    display: block;
+    margin: 0 auto 20px;
+}
 
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
