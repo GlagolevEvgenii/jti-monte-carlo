@@ -42,21 +42,32 @@ header{
 main {
     flex: 1 0 auto;
 }
+img{
+    max-width: 100%;
+}
 
 .regular-content{
     max-width: 392px;
     margin: 0 auto;
     text-align: center;
 }
-.regular-main{
-    padding: 40px 0;
+
+.main-bg{
+    background-image: url(../img/main-bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 102px);
+    position: relative;
+    padding-bottom: 26px;
+    padding-top: 40px;
 }
 
 
 
 .btn{
     height: 64px;
-    padding: 0 12px;
+    padding: 0 9px;
     border: none;
     color: #FFF;
     border-radius: 12px;
@@ -66,7 +77,7 @@ main {
     cursor: pointer;
     text-align: center;
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -85,15 +96,16 @@ main {
 .btn:active{
     background: #025593;
 }
+.image-holder{
+    margin-bottom: 82px;
+}
 
 .swiper{
     max-width: 398px;
     margin: 0 auto 22px;
     padding-bottom: 40px !important;
 }
-.item-slider{
-    height: auto!important;
-}
+
 
 .slider-text{
     color: #000;
@@ -132,16 +144,35 @@ main {
 
 .regular-title{
     text-align: center;
-    font-size: 34px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 700;
-    line-height: 44px; /* 129.412% */
+    line-height: 35px; /* 129.412% */
     letter-spacing: 0.34px;
     text-transform: uppercase;
 }
+.regular-title{
+    text-align: center;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 129.412% */
+    letter-spacing: 0.34px;
+    text-transform: uppercase;
+}
+.regular-subtitle{
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
 
 .regular-title.small-mode{
-    font-size: 30px;
+    font-size: 24px;
     line-height: normal;
     letter-spacing: 0.3px;
 }
@@ -170,6 +201,7 @@ main {
     text-underline-offset: auto;
     text-underline-position: from-font;
     text-transform: uppercase;
+    color: #000000;
 }
 
 
@@ -194,6 +226,9 @@ main {
 }
 .mb-74{
     margin-bottom: 74px!important;
+}
+.pt-98{
+    padding-top: 98px!important;
 }
 
 
@@ -235,7 +270,7 @@ main {
     display: flex;
     flex-direction: column;
     gap:26px;
-    margin-bottom: 44px;
+    margin-bottom: 178px;
 }
 .form-control {
     color: #000;
@@ -278,10 +313,19 @@ input[type="radio"]:checked::before {
 }
 
 @media (min-width: 480px) {
+    .main-bg{
+        padding-top: 98px;
+    }
+
+    .regular-title{
+        font-size: 34px;
+        line-height: 44px;
+    }
     .regular-title.small-mode{
         font-size: 30px;
     }
-    .btn-small{
-        font-size: 20px;
+    .btn{
+        font-size: 18px;
+
     }
 }

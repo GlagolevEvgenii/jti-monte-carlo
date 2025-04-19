@@ -5,7 +5,7 @@ const embedEngine = {
     binds() {
         const swiper = new Swiper('.swiper', {
             slidesPerView: 1,
-            calculateHeight:true,
+            autoHeight:true,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
